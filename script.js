@@ -4,5 +4,5 @@ const prices = document.querySelectorAll('[data-ns-test="prices"]');
     for (let i = 0; i < prices.length; i++) {
       total += parseFloat(prices[i].textContent);
     }
-    const grandTotal = document.querySelector('[data-ns-test="grandTotal"]');
+    const grandTotal = document.createElement('[data-ns-test="grandTotal"]');
     grandTotal.textContent = total.toFixed(2);
